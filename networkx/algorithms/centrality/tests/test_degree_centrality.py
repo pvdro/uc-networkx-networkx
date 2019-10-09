@@ -8,7 +8,7 @@ import networkx as nx
 
 
 class TestDegreeCentrality:
-    def __init__(self):
+    def setup_method(self):
 
         self.K = nx.krackhardt_kite_graph()
         self.P3 = nx.path_graph(3)

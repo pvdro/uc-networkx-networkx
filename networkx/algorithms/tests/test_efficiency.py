@@ -12,8 +12,7 @@ import networkx as nx
 
 
 class TestEfficiency:
-
-    def __init__(self):
+    def setup_method(self):
         # G1 is a disconnected graph
         self.G1 = nx.Graph()
         self.G1.add_nodes_from([1, 2, 3])
